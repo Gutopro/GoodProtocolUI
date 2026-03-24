@@ -227,6 +227,11 @@ export default function SideBar({ mobile, closeSidebar }: { mobile?: boolean; cl
                         show: !isMinipay || bridgeEnabled,
                     },
                     {
+                        route: '/goodbridge',
+                        text: 'Good Bridge',
+                        show: !isMinipay || bridgeEnabled,
+                    },
+                    {
                         label: i18n._(t`GoodDollar Main Bridge`),
                         url: 'https://docs.gooddollar.org/user-guides/bridge-gooddollars',
                         dataAttr: 'mainbridge',

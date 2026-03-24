@@ -21,6 +21,7 @@ interface FeatureContextValue {
 const supportedFeatureKeys = [
     'networkEnabled',
     'microBridgeEnabled',
+    'goodBridgeEnabled',
     'lzBridgeEnabled',
     'reserveEnabled',
     'claimEnabled',
