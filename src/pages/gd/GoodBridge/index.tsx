@@ -16,7 +16,9 @@ const GoodBridge = memo(() => {
                     {address ? (
                         <MPBBridgeController />
                     ) : (
-                        <Placeholder className="mx-4">{i18n._(t`Connect a wallet to see your portfolio`)}</Placeholder>
+                        <Placeholder className="mx-4">
+                            {i18n._(t`Connect a wallet to start bridging assets`)}
+                        </Placeholder>
                     )}
                 </SwitchChainModal>
             </div>
