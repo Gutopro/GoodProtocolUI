@@ -100,7 +100,7 @@ export default function SideBar({ mobile, closeSidebar }: { mobile?: boolean; cl
     })
 
     const isMinipay = isMiniPay()
-    const { bridgeEnabled = false, swapEnabled = false } = payload || {}
+    const { bridgeEnabled = false, swapEnabled = false, goodBridgeEnabled = false } = payload || {}
 
     const externalLinks = useMemo(
         () => [
@@ -229,7 +229,7 @@ export default function SideBar({ mobile, closeSidebar }: { mobile?: boolean; cl
                     {
                         route: '/goodbridge',
                         text: 'Good Bridge',
-                        show: !isMinipay || bridgeEnabled,
+                        show: !isMinipay || goodbridgeEnabled,
                     },
                     {
                         label: i18n._(t`GoodDollar Main Bridge`),
