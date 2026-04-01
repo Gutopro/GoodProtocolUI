@@ -229,7 +229,7 @@ export default function SideBar({ mobile, closeSidebar }: { mobile?: boolean; cl
                     {
                         route: '/goodbridge',
                         text: 'Good Bridge',
-                        show: !isMinipay || goodbridgeEnabled,
+                        show: !isMinipay || goodBridgeEnabled,
                     },
                     {
                         label: i18n._(t`GoodDollar Main Bridge`),
