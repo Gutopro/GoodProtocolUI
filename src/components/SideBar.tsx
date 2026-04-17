@@ -223,12 +223,12 @@ export default function SideBar({ mobile, closeSidebar }: { mobile?: boolean; cl
                 items: [
                     {
                         route: '/microbridge',
-                        text: 'Micro Bridge',
+                        text: 'Fuse/Celo Bridge',
                         show: !isMinipay || bridgeEnabled,
                     },
                     {
                         route: '/goodbridge',
-                        text: 'Good Bridge',
+                        text: 'GoodBridge',
                         show: !isMinipay || goodBridgeEnabled,
                     },
                     {
